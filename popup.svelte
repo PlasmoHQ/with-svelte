@@ -14,18 +14,28 @@
 <style>
     .container {
         min-width: 470px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 47px;
     }
     .action {
         color: #470;
         font-weight: bold;
     }
+    .text-center {
+        text-align: center;
+    }
 </style>
 
-<div class="container">
-    <p>Current count: <b>{count}</b></p>
-    <div>
+<div>
+    <h2 class="text-center">
+      Welcome to your <a href="https://www.plasmo.com">Plasmo</a> Extension!
+    </h2>
+    <div class="container">
         <button on:click={decrement}>-</button>
+        <p>Current count: <b>{count}</b></p>
         <button on:click={increment}>+</button>
-        {#if action}<span class="action">{action}</span>{/if}
     </div>
+    {#if action}<p class="action text-center">{action}</p>{/if}
 </div>
