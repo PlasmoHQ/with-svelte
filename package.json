@@ -10,7 +10,7 @@
     "build": "plasmo build"
   },
   "dependencies": {
-    "plasmo": "0.57.1",
+    "plasmo": "0.57.2",
     "svelte": "3.52.0",
     "svelte-preprocess": "4.10.7"
   },
